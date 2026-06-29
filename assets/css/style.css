@@ -151,3 +151,72 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
+/* ====== HERO ====== */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.hero-desc {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 48px;
+    line-height: 1.7;
+}
+
+.hero-cards {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 32px 24px;
+    width: 280px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.hero-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255,255,255,0.3);
+}
+
+.hero-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    color: #aaa;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
