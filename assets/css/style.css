@@ -69,13 +69,7 @@ button {
 
 
 
-.nav-logo .brand {
-    color: #ff3333;
-}
 
-.nav-logo .sub {
-    color: #ffffff;
-}
 
 .nav-menu {
        position: absolute;
@@ -151,7 +145,8 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
+.brand { color: #ff3333; }
+.sub   { color: #ffffff; }
 /* ====== HERO ====== */
 .hero {
     text-align: center;
