@@ -1,3 +1,5 @@
+console.log("✅ builds.js chargé !");
+
 const builds = {
     'debutant-starter': {
         title: '🔰 Débutant — Starter',
@@ -185,4 +187,72 @@ const builds = {
                 perks: [
                     { src: 'assets/Survivors/General Survivor/With Backgrounds/Deja Vu/Deja Vu III.png', alt: 'Deja Vu' },
                     { src: 'assets/Survivors/Felix Richter/With Backgrounds/Built to Last III.png', alt: 'Built to Last' },
-                    { src: 'assets/
+                    { src: 'assets/Survivors/Rebecca Chambers/With Backgrounds/Hyperfocus III.png', alt: 'Hyperfocus' },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/spine chill/Spine Chill III.png', alt: 'Spine Chill' },
+                ],
+                tips: [
+                    '<strong>Déjà Vu</strong> pour repérer les générateurs rapidement.',
+                    '<strong>Built to Last</strong> pour garder des outils plus longtemps.',
+                    '<strong>Hyperfocus</strong> pour une progression ultra-rapide des générateurs.',
+                    '<strong>Spine Chill</strong> pour éviter les surprises du tueur.',
+                ]
+            }
+        ]
+    }
+};
+
+// ====== POPUP FUNCTIONS ======
+
+function openPopup(buildId) {
+    console.log("🔓 Ouverture popup :", buildId);
+
+    const build = builds[buildId];
+    if (!build) {
+        console.error("Build non trouvé :", buildId);
+        return;
+    }
+
+    const popupOverlay = document.getElementById('popupOverlay');
+    const popupTitle = document.getElementById('popupTitle');
+    const popupContent = document.getElementById('popupContent');
+
+    popupTitle.textContent = build.title;
+    popupContent.innerHTML = '';
+
+    build.items.forEach(item => {
+        let html = `<div class="popup-item">
+            <h3>${item.name}</h3>
+            <div class="popup-perks">`;
+
+        item.perks.forEach(perk => {
+            html += `<img src="${perk.src}" alt="${perk.alt}" title="${perk.alt}">`;
+        });
+
+        html += `</div>`;
+
+        if (item.tips) {
+            html += `<div class="popup-tips"><ul>`;
+            item.tips.forEach(tip => {
+                html += `<li>${tip}</li>`;
+            });
+            html += `</ul></div>`;
+        }
+
+        html += `</div>`;
+        popupContent.innerHTML += html;
+    });
+
+    popupOverlay.classList.add('active');
+}
+
+function closePopup() {
+    console.log("🔒 Fermeture popup");
+    const popupOverlay = document.getElementById('popupOverlay');
+    popupOverlay.classList.remove('active');
+}
+
+function closeOnOverlay(event) {
+    if (event.target.id === 'popupOverlay') {
+        closePopup();
+    }
+}
