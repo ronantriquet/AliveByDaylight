@@ -169,20 +169,37 @@ body {
 
 .hero-cards {
     display: flex;
-    gap: 24px;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 40px;
+    align-items: stretch; /* même hauteur */
+    gap: 40px;
+    padding: 60px 40px;
 }
 
+
 .hero-card {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 12px;
-    padding: 32px 24px;
+
+    background-image: url('../../assets/Blanks/VeryRare.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+     padding: 30px;
     width: 280px;
-    transition: transform 0.2s, border-color 0.2s;
+    min-height: 200px;
+    border-radius: 8px;
+    
+    /* Supprime ton ancien background-color si tu en avais un */
 }
+
+
+
+.hero-card * {
+    position: relative;
+    z-index: 1;
+}
+
+
 
 .hero-card:hover {
     transform: translateY(-4px);
