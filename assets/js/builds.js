@@ -37,6 +37,24 @@ const builds = {
                     '<strong>Borrowed Time</strong> pour sauver en sécurité.',
                 ]
             }
+            'debutant-nouveau': {
+  title: '🛡 Débutant — Nouveau',
+  items: [
+    {
+      name: 'Nom du build',
+      perks: [
+        { src: 'assets/...', alt: 'Perk 1' },
+        { src: 'assets/...', alt: 'Perk 2' },
+        { src: 'assets/...', alt: 'Perk 3' },
+        { src: 'assets/...', alt: 'Perk 4' },
+      ],
+      tips: [
+        'Tip 1',
+        'Tip 2',
+      ]
+    }
+  ]
+},
         ]
     },
     'healer-meta': {
