@@ -20,7 +20,7 @@
     color: #ffffff;
     position: relative;
     padding-bottom: 20px;
-    font-family: 'Friday13', sans-serif;
+    
 }
 
 .section-title::after {
@@ -37,28 +37,43 @@
 /* Cards Grid */
 .builds-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
     justify-items: center;
-    margin-bottom: 80px;
+    grid-auto-rows: 400px; /* ajuste cette valeur */
 }
 
 /* Diamond Card */
 .diamond-card {
-    margin-top: 20px;
-    width: 210px;
-    height: 210px;
-    background: linear-gradient(135deg, #9d4edd 0%, #7209b7 100%);
-    transform: rotate(45deg);
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: rotate(45deg);
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 8px 32px rgba(157, 78, 221, 0.3);
     position: relative;
     overflow: hidden;
-    border-radius: 4px;
+    border-radius: 0px;
+}
+
+.diamond-img {
+    max-width: none;
+    width: 140%;
+    height: 140%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 .diamond-card::before {
@@ -68,7 +83,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+    background: linear-gradient(45deg, transparent 30%, rgba(141, 16, 16, 0.1) 50%, transparent 70%);
     transform: translateX(-100%);
     transition: transform 0.6s ease;
 }
@@ -86,6 +101,12 @@
     transform: rotate(-45deg);
     text-align: center;
     z-index: 2;
+    display: flex;
+    flex-direction: column;  /* ← IMPORTANT: empile verticalement */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .card-title {
@@ -95,7 +116,7 @@
     letter-spacing: 2px;
     margin-bottom: 10px;
     color: #ffffff;
-    font-family: 'Friday13', sans-serif;
+    
 }
 
 .card-description {
@@ -135,3 +156,63 @@
         font-size: 12px;
     }
 }
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transform: rotate(-45deg) !important;
+}
+
+.card-icon .icon-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    filter: drop-shadow(0 0 15px rgba(196, 30, 58, 0.4));
+    transition: all 0.3s ease;
+}
+
+.diamond-card:hover .icon-img {
+    filter: drop-shadow(0 0 25px rgba(196, 30, 58, 0.8)) !important;
+    transform: scale(1.15) !important;
+}
+
+.diamond-card[onclick*="window.location"] {
+    background: linear-gradient(135deg, #c41e3a 0%, #9d004a 100%) !important;
+}
+
+
+
+.diamond-card:hover .icon-img-direct {
+    filter: drop-shadow(0 0 25px rgba(196, 30, 58, 0.8));
+    transform: scale(1.15);
+}
+
+.icon-img-direct {
+    width: 60px;           /* Taille de l'image */
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;   /* Espace avant le titre */
+    flex-shrink: 0;        /* Ne pas rétrécir */
+}
+
+
+
+
+
+
+
+
+
+
+
