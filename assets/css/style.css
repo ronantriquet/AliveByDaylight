@@ -188,6 +188,9 @@ body {
     height: 300px;
     min-height: 200px;
     border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    
     
     /* Supprime ton ancien background-color si tu en avais un */
 }
