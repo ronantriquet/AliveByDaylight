@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Builds - DBD Survivor Guide</title>
+    <title>Builds - AliveBY Daylight</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/builds.css">
 </head>
 <body>
-
+    <!-- ====== NAVBAR ====== -->
     <nav class="navbar">
         <a href="index.html" class="nav-logo">
             <span class="brand">AliveBy</span>
@@ -23,110 +23,125 @@
         <img src="assets/images/dbdlogo.png" alt="Logo DeadbyDaylight" class="nav-logo-img">
     </nav>
 
-    <main class="builds-page">
-
-        <section class="category-section">
-            <h2 class="category-title">Débutant</h2>
-          <div class="diamonds-row">
-  <div class="diamond-btn" onclick="openPopup('debutant-starter')">
-    <div class="diamond-content">
-      <h3>Build Starter</h3>
-      <p>Perks de base faciles d'accès</p>
-    </div>
-  </div>
-
-  <div class="diamond-btn" onclick="openPopup('debutant-safe')">
-    <div class="diamond-content">
-      <h3>Build Safe</h3>
-      <p>Survie & information</p>
-    </div>
-  </div>
-
-  <!-- ICI ton nouveau losange -->
-  <div class="diamond-btn" onclick="openPopup('debutant-nouveau')">
-    <div class="diamond-content">
-      <h3>Ton titre</h3>
-      <p>Ta description</p>
-    </div>
-  </div>
-
-</div> <!-- fin diamonds-row -->
-        </section>
-
-        <section class="category-section">
-            <h2 class="category-title">Healer</h2>
-            <div class="diamonds-row">
-                <div class="diamond-btn" onclick="openPopup('healer-meta')">
-                    <div class="diamond-content">
-                        <h3>Healer Méta</h3>
-                        <p>Soin rapide & localisation</p>
-                    </div>
-                </div>
-                <div class="diamond-btn" onclick="openPopup('healer-off')">
-                    <div class="diamond-content">
-                        <h3>Healer Offensif</h3>
-                        <p>Soigner sans se sacrifier</p>
-                    </div>
+    <!-- ====== MAIN CONTENT ====== -->
+    <main class="builds-main">
+        <!-- DÉBUTANT -->
+        <h2 class="section-title">DÉBUTANT</h2>
+        <div class="builds-grid">
+            <div class="diamond-card" onclick="openPopup('debutant-starter')">
+                <div class="card-content">
+                    <div class="card-title">BUILD STARTER</div>
+                    <div class="card-description">Perks de base faciles d'accès</div>
                 </div>
             </div>
-        </section>
-
-        <section class="category-section">
-            <h2 class="category-title">Looper / Chaser</h2>
-            <div class="diamonds-row">
-                <div class="diamond-btn" onclick="openPopup('loop-compet')">
-                    <div class="diamond-content">
-                        <h3>Loop Compétitif</h3>
-                        <p>Chase & distance maximale</p>
-                    </div>
-                </div>
-                <div class="diamond-btn" onclick="openPopup('loop-vault')">
-                    <div class="diamond-content">
-                        <h3>Vault Speed</h3>
-                        <p>Passages rapides & esquives</p>
-                    </div>
+            <div class="diamond-card" onclick="openPopup('debutant-safe')">
+                <div class="card-content">
+                    <div class="card-title">BUILD SAFE</div>
+                    <div class="card-description">Survie & information</div>
                 </div>
             </div>
-        </section>
-
-        <section class="category-section">
-            <h2 class="category-title">SoloQ</h2>
-            <div class="diamonds-row">
-                <div class="diamond-btn" onclick="openPopup('soloq-meta')">
-                    <div class="diamond-content">
-                        <h3>SoloQ Méta</h3>
-                        <p>Info & anti-tunnel</p>
-                    </div>
-                </div>
-                <div class="diamond-btn" onclick="openPopup('soloq-safe')">
-                    <div class="diamond-content">
-                        <h3>SoloQ Safe</h3>
-                        <p>Autonomie maximale</p>
-                    </div>
+            <div class="diamond-card" onclick="openPopup('debutant-nouveau')">
+                <div class="card-content">
+                    <div class="card-title">BUILD NOUVEAU</div>
+                    <div class="card-description">À compléter</div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="category-section">
-            <h2 class="category-title">Genrush</h2>
-            <div class="diamonds-row">
-                <div class="diamond-btn" onclick="openPopup('genrush-meta')">
-                    <div class="diamond-content">
-                        <h3>Genrush Méta</h3>
-                        <p>Gens à toute vitesse</p>
-                    </div>
-                </div>
-                <div class="diamond-btn" onclick="openPopup('genrush-toolbox')">
-                    <div class="diamond-content">
-                        <h3>Toolbox Rush</h3>
-                        <p>Boite à outils & efficacité</p>
-                    </div>
+        <!-- HEALER -->
+        <h2 class="section-title">HEALER</h2>
+        <div class="builds-grid">
+            <div class="diamond-card" onclick="openPopup('healer-meta')">
+                <div class="card-content">
+                    <div class="card-title">HEALER MÉTA</div>
+                    <div class="card-description">Soin rapide & localisation</div>
                 </div>
             </div>
-        </section>
+            <div class="diamond-card" onclick="openPopup('healer-off')">
+                <div class="card-content">
+                    <div class="card-title">HEALER OFFENSIF</div>
+                    <div class="card-description">Soigner sans se sacrifier</div>
+                </div>
+            </div>
+            <div class="diamond-card">
+                <div class="card-content">
+                    <div class="card-title">TON TITRE</div>
+                    <div class="card-description">Ta description</div>
+                </div>
+            </div>
+        </div>
 
+        <!-- LOOPER / CHASER -->
+        <h2 class="section-title">LOOPER / CHASER</h2>
+        <div class="builds-grid">
+            <div class="diamond-card" onclick="openPopup('loop-compet')">
+                <div class="card-content">
+                    <div class="card-title">LOOPER COMPÉTITIF</div>
+                    <div class="card-description">Chase longue & agressive</div>
+                </div>
+            </div>
+            <div class="diamond-card" onclick="openPopup('loop-vault')">
+                <div class="card-content">
+                    <div class="card-title">LOOPER VAULT</div>
+                    <div class="card-description">Boucles rapides & sûres</div>
+                </div>
+            </div>
+            <div class="diamond-card">
+                <div class="card-content">
+                    <div class="card-title">TON TITRE</div>
+                    <div class="card-description">Ta description</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOLOQ -->
+        <h2 class="section-title">SOLOQ</h2>
+        <div class="builds-grid">
+            <div class="diamond-card" onclick="openPopup('soloq-meta')">
+                <div class="card-content">
+                    <div class="card-title">SOLOQ MÉTA</div>
+                    <div class="card-description">Vision du terrain complète</div>
+                </div>
+            </div>
+            <div class="diamond-card" onclick="openPopup('soloq-safe')">
+                <div class="card-content">
+                    <div class="card-title">SOLOQ AUTONOME</div>
+                    <div class="card-description">Autonomie & survie solo</div>
+                </div>
+            </div>
+            <div class="diamond-card">
+                <div class="card-content">
+                    <div class="card-title">TON TITRE</div>
+                    <div class="card-description">Ta description</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GENRUSH -->
+        <h2 class="section-title">GENRUSH</h2>
+        <div class="builds-grid">
+            <div class="diamond-card" onclick="openPopup('genrush-meta')">
+                <div class="card-content">
+                    <div class="card-title">GENRUSH MÉTA</div>
+                    <div class="card-description">Gens optimisé maximum</div>
+                </div>
+            </div>
+            <div class="diamond-card" onclick="openPopup('genrush-toolbox')">
+                <div class="card-content">
+                    <div class="card-title">GENRUSH TOOLBOX</div>
+                    <div class="card-description">Protection du générateur</div>
+                </div>
+            </div>
+            <div class="diamond-card">
+                <div class="card-content">
+                    <div class="card-title">TON TITRE</div>
+                    <div class="card-description">Ta description</div>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <!-- ====== POPUP OVERLAY ====== -->
     <div class="popup-overlay" id="popupOverlay" onclick="closeOnOverlay(event)">
         <div class="popup-box" id="popupBox">
             <button class="popup-close" onclick="closePopup()">✕</button>
@@ -136,7 +151,5 @@
     </div>
 
     <script src="assets/js/builds.js"></script>
-
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>

@@ -5,10 +5,10 @@ const builds = {
             {
                 name: 'Build Starter Débutant',
                 perks: [
-                    { src: 'assets/Survivors/General Survivor/With Backgrounds//kindred/Kindred III.png', alt: 'Kindred' },
-                    { src: "assets/Survivors/General Survivor/With Backgrounds//We_ll Make It/We_ll Make It III.png", alt: "We'll Make It" },
-                    { src: 'assets/Survivors/General Survivor/With Backgrounds//Deja Vu/Deja Vu III.png', alt: 'Deja Vu' },
-                    { src: 'assets/Survivors/General Survivor/With Backgrounds//Dark Sense/Dark Sense III.png', alt: 'Dark Sense' },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/kindred/Kindred III.png', alt: 'Kindred' },
+                    { src: "assets/Survivors/General Survivor/With Backgrounds/We_ll Make It/We_ll Make It III.png", alt: "We'll Make It" },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/Deja Vu/Deja Vu III.png', alt: 'Deja Vu' },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/Dark Sense/Dark Sense III.png', alt: 'Dark Sense' },
                 ],
                 tips: [
                     'Uniquement des perks de base disponibles dès le début.',
@@ -25,9 +25,9 @@ const builds = {
             {
                 name: 'Build Safe Débutant',
                 perks: [
-                    { src: 'assets/Survivors/General Survivor/With Backgrounds//kindred/Kindred III.png', alt: 'Kindred' },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/kindred/Kindred III.png', alt: 'Kindred' },
                     { src: 'assets/Survivors/Claudette Morel/With Backgrounds/Self Care III.png', alt: 'Self Care' },
-                    { src: 'assets/Survivors/General Survivor/With Backgrounds//Deja Vu/Deja Vu III.png', alt: 'Deja Vu' },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/Deja Vu/Deja Vu III.png', alt: 'Deja Vu' },
                     { src: 'assets/Survivors/Bill Overbeck/With Backgrounds/Borrowed Time III.png', alt: 'Borrowed Time' },
                 ],
                 tips: [
@@ -37,24 +37,24 @@ const builds = {
                     '<strong>Borrowed Time</strong> pour sauver en sécurité.',
                 ]
             }
-            'debutant-nouveau': {
-  title: '🛡 Débutant — Nouveau',
-  items: [
-    {
-      name: 'Nom du build',
-      perks: [
-        { src: 'assets/...', alt: 'Perk 1' },
-        { src: 'assets/...', alt: 'Perk 2' },
-        { src: 'assets/...', alt: 'Perk 3' },
-        { src: 'assets/...', alt: 'Perk 4' },
-      ],
-      tips: [
-        'Tip 1',
-        'Tip 2',
-      ]
-    }
-  ]
-},
+        ]
+    },
+    'debutant-nouveau': {
+        title: '🛡 Débutant — Nouveau',
+        items: [
+            {
+                name: 'Nom du build',
+                perks: [
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/kindred/Kindred III.png', alt: 'Perk 1' },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/kindred/Kindred III.png', alt: 'Perk 2' },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/kindred/Kindred III.png', alt: 'Perk 3' },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/kindred/Kindred III.png', alt: 'Perk 4' },
+                ],
+                tips: [
+                    'Tip 1',
+                    'Tip 2',
+                ]
+            }
         ]
     },
     'healer-meta': {
@@ -66,7 +66,7 @@ const builds = {
                     { src: 'assets/Survivors/Claudette Morel/With Backgrounds/Self Care III.png', alt: 'Self Care' },
                     { src: 'assets/Survivors/Claudette Morel/With Backgrounds/Botany Knowledge III.png', alt: 'Botany Knowledge' },
                     { src: 'assets/Survivors/Claudette Morel/With Backgrounds/Empathy III.png', alt: 'Empathy' },
-                    { src: 'assets/Survivors/General Survivor/With Backgrounds//kindred/Kindred III.png', alt: 'Kindred' },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/kindred/Kindred III.png', alt: 'Kindred' },
                 ],
                 tips: [
                     'Heal tes coequipiers rapidement grâce à <strong>We\'ll Make It</strong>.',
@@ -85,7 +85,7 @@ const builds = {
                 perks: [
                     { src: 'assets/Survivors/Claudette Morel/With Backgrounds/Empathy III.png', alt: 'Empathy' },
                     { src: 'assets/Survivors/Claudette Morel/With Backgrounds/Botany Knowledge III.png', alt: 'Botany Knowledge' },
-                    { src: "assets/Survivors/General Survivor/With Backgrounds//We_ll Make It/We_ll Make It III.png", alt: "We'll Make It" },
+                    { src: "assets/Survivors/General Survivor/With Backgrounds/We_ll Make It/We_ll Make It III.png", alt: "We'll Make It" },
                     { src: 'assets/Survivors/Bill Overbeck/With Backgrounds/Borrowed Time III.png', alt: 'Borrowed Time' },
                 ],
                 tips: [
@@ -143,7 +143,7 @@ const builds = {
             {
                 name: 'Build SoloQ Méta',
                 perks: [
-                    { src: 'assets/Survivors/General Survivor/With Backgrounds//kindred/Kindred III.png', alt: 'Kindred' },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/kindred/Kindred III.png', alt: 'Kindred' },
                     { src: 'assets/Survivors/Kate Denson/With Backgrounds/Windows of Opportunity III.png', alt: 'Windows of Opportunity' },
                     { src: 'assets/Survivors/Bill Overbeck/With Backgrounds/Borrowed Time III.png', alt: 'Borrowed Time' },
                     { src: 'assets/Survivors/Laurie Strode/With Backgrounds/Decisive Strike III.png', alt: 'Decisive Strike' },
@@ -163,7 +163,7 @@ const builds = {
             {
                 name: 'Build SoloQ Autonome',
                 perks: [
-                    { src: 'assets/Survivors/General Survivor/With Backgrounds//kindred/Kindred III.png', alt: 'Kindred' },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/kindred/Kindred III.png', alt: 'Kindred' },
                     { src: 'assets/Survivors/Claudette Morel/With Backgrounds/Self Care III.png', alt: 'Self Care' },
                     { src: 'assets/Survivors/Laurie Strode/With Backgrounds/Decisive Strike III.png', alt: 'Decisive Strike' },
                     { src: 'assets/Survivors/Claudette Morel/With Backgrounds/Botany Knowledge III.png', alt: 'Botany Knowledge' },
@@ -183,78 +183,6 @@ const builds = {
             {
                 name: 'Build Genrush Méta',
                 perks: [
-                    { src: 'assets/Survivors/General Survivor/With Backgrounds//Deja Vu/Deja Vu III.png', alt: 'Deja Vu' },
+                    { src: 'assets/Survivors/General Survivor/With Backgrounds/Deja Vu/Deja Vu III.png', alt: 'Deja Vu' },
                     { src: 'assets/Survivors/Felix Richter/With Backgrounds/Built to Last III.png', alt: 'Built to Last' },
-                    { src: 'assets/Survivors/Rebecca Chambers/With Backgrounds/Hyperfocus III.png', alt: 'Hyperfocus' },
-                    { src: 'assets/Survivors/David Tapp/With Backgrounds/Stake Out III.png', alt: 'Stake Out' },
-                ],
-                tips: [
-                    '<strong>Deja Vu</strong> pour identifier les 3 gens les plus proches.',
-                    '<strong>Built to Last</strong> pour recharger sa boite à outils.',
-                    '<strong>Hyperfocus</strong> pour des great skill checks en série.',
-                    '<strong>Stake Out</strong> pour accumuler des tokens et progresser vite.',
-                ]
-            }
-        ]
-    },
-    'genrush-toolbox': {
-        title: '⚡ Genrush — Toolbox',
-        items: [
-            {
-                name: 'Build Toolbox Rush',
-                perks: [
-                    { src: 'assets/Survivors/Rebecca Chambers/With Backgrounds/Hyperfocus III.png', alt: 'Hyperfocus' },
-                    { src: 'assets/Survivors/Felix Richter/With Backgrounds/Built to Last III.png', alt: 'Built to Last' },
-                    { src: 'assets/Survivors/General Survivor/With Backgrounds//Deja Vu/Deja Vu III.png', alt: 'Deja Vu' },
-                    { src: 'assets/Survivors/David Tapp/With Backgrounds/Stake Out III.png', alt: 'Stake Out' },
-                ],
-                tips: [
-                    'Apporte toujours une boite à outils en jeu.',
-                    '<strong>Built to Last</strong> la recharge à 99% après utilisation.',
-                    '<strong>Hyperfocus</strong> maximise l\'efficacité de chaque skill check.',
-                    '<strong>Stake Out</strong> génère des great checks en continu.',
-                ]
-            }
-        ]
-    },
-};
-
-function openPopup(id) {
-    const data = builds[id];
-    if (!data) return;
-
-    document.getElementById('popupTitle').textContent = data.title;
-
-    let html = '';
-    data.items.forEach(build => {
-        html += `<div class="popup-build">`;
-        html += `<h3>${build.name}</h3>`;
-        html += `<div class="perks-row">`;
-        build.perks.forEach(p => {
-            html += `<div class="perk-icon"><img src="${p.src}" alt="${p.alt}" onerror="this.style.opacity='0.3'"></div>`;
-        });
-        html += `</div>`;
-        html += `<ol class="build-tips">`;
-        build.tips.forEach(t => {
-            html += `<li>${t}</li>`;
-        });
-        html += `</ol></div>`;
-    });
-
-    document.getElementById('popupContent').innerHTML = html;
-    document.getElementById('popupOverlay').classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-function closePopup() {
-    document.getElementById('popupOverlay').classList.remove('active');
-    document.body.style.overflow = '';
-}
-
-function closeOnOverlay(e) {
-    if (e.target === document.getElementById('popupOverlay')) closePopup();
-}
-
-document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closePopup();
-});
+                    { src: 'assets/
