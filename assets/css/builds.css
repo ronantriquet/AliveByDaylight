@@ -40,7 +40,7 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
     justify-items: center;
-    margin-top: 75px;
+    margin-top: 80px;
     margin-bottom: 40px;
 }
 
@@ -54,11 +54,57 @@
     transform: rotate(45deg);
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(157, 78, 221, 0.3);
+    box-shadow: 0 8px 32px rgba(8, 155, 74, 0.3);
     position: relative;
     overflow: hidden;
     border-radius: 0px;
 }
+
+.diamond-card:hover {
+    transform: rotate(45deg) scale(1.05);
+    box-shadow: 0 12px 40px rgba(8, 155, 74, 0.6);
+}
+
+.diamond-card2 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(29, 8, 219, 0.3);
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+.diamond-card2:hover {
+    transform: rotate(45deg) scale(1.05);
+    box-shadow: 0 12px 40px rgba(29, 8, 219, 0.6);
+}
+
+.diamond-card3 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(158, 5, 204, 0.3);
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+}
+.diamond-card3:hover {
+    transform: rotate(45deg) scale(1.05);
+    box-shadow: 0 12px 40px rgba(158, 5, 204, 0.3);
+}
+
+
 
 .diamond-img {
     max-width: none;
@@ -89,10 +135,7 @@ img {
     transition: transform 0.6s ease;
 }
 
-.diamond-card:hover {
-    transform: rotate(45deg) scale(1.05);
-    box-shadow: 0 12px 48px rgba(157, 78, 221, 0.5);
-}
+
 
 .diamond-card:hover::before {
     transform: translateX(100%);
