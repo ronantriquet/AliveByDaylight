@@ -40,7 +40,8 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
     justify-items: center;
-    grid-auto-rows: 400px; /* ajuste cette valeur */
+    margin-top: 75px;
+    margin-bottom: 40px;
 }
 
 /* Diamond Card */
