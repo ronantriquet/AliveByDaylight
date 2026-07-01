@@ -1,0 +1,72 @@
+.tierlist-container {
+  background: #1a1a1a;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.tierlist-title {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.tierlist-title span {
+  color: #e63535;
+}
+
+.tier-row {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #333;
+  margin-bottom: 4px;
+}
+
+.tier-label {
+  width: 60px;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Couleurs par tier */
+.tier-label.s  { background: #e63535; }
+.tier-label.a  { background: #e07020; }
+.tier-label.b  { background: #c8b400; }
+.tier-label.c  { background: #4caf50; }
+.tier-label.d  { background: #2196f3; }
+.tier-label.f  { background: #9c27b0; }
+.tier-label.tbd { background: #888; font-size: 1rem; }
+
+.tier-items {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  gap: 8px;
+  background: #2a2a2a;
+  flex: 1;
+}
+
+.tier-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+}
+
+.tier-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.tier-item span {
+  color: #ccc;
+  font-size: 0.6rem;
+  text-align: center;
+  margin-top: 3px;
+}
