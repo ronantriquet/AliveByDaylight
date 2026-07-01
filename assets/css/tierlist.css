@@ -79,14 +79,15 @@
 
 .tier-item:hover {
     transform: translateY(-4px);
+    
 }
 
 
 .tier-item:hover img {
-    border-color: #9b4edc;
-    box-shadow: 0 4px 16px rgba(155,78,221,0.4);
-}
 
+    border-color: #9b4edc;
+    filter: drop-shadow(0 0 10px rgba(155,78,221,0.6));
+}
 
 
 @media (max-width: 768px) {
