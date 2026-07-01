@@ -4,185 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Builds - DBD Survivor Guide</title>
-    <link rel="stylesheet" href="assets/css/builds.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/builds.css">
 </head>
 <body>
 
-   <nav class="navbar">
+    <nav class="navbar">
         <a href="index.html" class="nav-logo">
             <span class="brand">AliveBy</span>
             <span class="sub">Daylight</span>
-            
         </a>
         <ul class="nav-menu">
-            <li><a href="index.html" class="active"> Accueil</a></li>
-            <li><a href="builds.html"> Builds</a></li>
-            <li><a href="techs.html"> Techs</a></li>
-            <li><a href="tier-list.html"> Tier List</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="builds.html" class="active">Builds</a></li>
+            <li><a href="techs.html">Techs</a></li>
+            <li><a href="tier-list.html">Tier List</a></li>
         </ul>
         <img src="assets/images/dbdlogo.png" alt="Logo DeadbyDaylight" class="nav-logo-img">
     </nav>
 
-    <main class="builds-container">
+    <main class="builds-page">
 
-      <!-- CATÉGORIE : DÉBUTANT -->
         <section class="category-section">
-            <div class="category-header">
-                <h2>Débutant</h2>
-                <span class="builds-count">Builds : 2 <button class="show-btn">SHOW ☰</button></span>
-            </div>
-            <div class="builds-grid">
-                <div class="build-card">
-                    <div class="build-card-inner">
-                        <div class="survivor-portrait">
-                            <img src="assets/portraits/survivant.png" alt="Survivant">
-                        </div>
-                        <div class="build-content">
-                            <h3>Build Starter Débutant</h3>
-                            <div class="perks-row">
-                                <div class="perk-icon"><img src="assets/Survivors/General Survivor/With Backgrounds//kindred/Kindred III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/General Survivor/With Backgrounds//We_ll Make It/We_ll Make It III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/General Survivor/With Backgrounds//Deja Vu/Deja Vu III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/General Survivor/With Backgrounds//Dark Sense/Dark Sense III.png" alt="Perk"></div>
-                            </div>
-                            <ol class="build-tips">
-                                <li>Uniquement des perks de base disponibles dès le début.</li>
-                                <li><strong>Kindred</strong> & <strong>WMI</strong> donnent des infos précieuses.</li>
-                                <li><strong>Déjà Vu</strong> pour repérer les gens rapidement.</li>
-                                <li><strong>Dark Sense</strong> pour garder un œil sur le tueur.</li>
-                            </ol>
-                        </div>
+            <h2 class="category-title">Débutant</h2>
+            <div class="diamonds-row">
+                <div class="diamond-btn" onclick="openPopup('debutant-starter')">
+                    <div class="diamond-content">
+                        <h3>Build Starter</h3>
+                        <p>Perks de base faciles d'accès</p>
+                    </div>
+                </div>
+                <div class="diamond-btn" onclick="openPopup('debutant-safe')">
+                    <div class="diamond-content">
+                        <h3>Build Safe</h3>
+                        <p>Survie & information</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CATÉGORIE : HEALER -->
         <section class="category-section">
-            <div class="category-header">
-                <h2>Healer</h2>
-                <span class="builds-count">Builds : 2 <button class="show-btn">SHOW ☰</button></span>
-            </div>
-            <div class="builds-grid">
-                <div class="build-card">
-                    <div class="build-card-inner">
-                        <div class="survivor-portrait">
-                            <img src="assets/portraits/survivant.png" alt="Survivant">
-                        </div>
-                        <div class="build-content">
-                            <h3>Build Healer Méta</h3>
-                            <div class="perks-row">
-                                <div class="perk-icon"><img src="assets/Survivors/Claudette Morel/With Backgrounds/Self Care III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/Claudette Morel/With Backgrounds/Botany Knowledge III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/Claudette Morel/With Backgrounds/Empathy III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/General Survivor/With Backgrounds//kindred/Kindred III.png" alt="Perk"></div>
-                            </div>
-                            <ol class="build-tips">
-                                <li>Heal tes coéquipiers rapidement grâce à <strong>We'll Make It</strong>.</li>
-                                <li>Utilise <strong>Botany Knowledge</strong> pour réduire le temps de soin.</li>
-                                <li><strong>Empathy</strong> te permet de toujours localiser les blessés.</li>
-                                <li><strong>Kindred</strong> optimise les décrochages en équipe.</li>
-                            </ol>
-                        </div>
+            <h2 class="category-title">Healer</h2>
+            <div class="diamonds-row">
+                <div class="diamond-btn" onclick="openPopup('healer-meta')">
+                    <div class="diamond-content">
+                        <h3>Healer Méta</h3>
+                        <p>Soin rapide & localisation</p>
                     </div>
                 </div>
-            </div>
-        </section>
-    
-</div>
-
-        <!-- CATÉGORIE : LOOPER / CHASER -->
-        <section class="category-section">
-            <div class="category-header">
-                <h2>Looper / Chaser</h2>
-                <span class="builds-count">Builds : 2 <button class="show-btn">SHOW ☰</button></span>
-            </div>
-            <div class="builds-grid">
-                <div class="build-card">
-                    <div class="build-card-inner">
-                        <div class="survivor-portrait">
-                            <img src="assets/portraits/survivant.png" alt="Survivant">
-                        </div>
-                        <div class="build-content">
-                            <h3>Build Loop Compétitif</h3>
-                            <div class="perks-row">
-                                <div class="perk-icon"><img src="assets/Survivors/David King/With Backgrounds/Dead Hard III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/Feng Min/With Backgrounds/Lithe III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/Nea Karlsson/With Backgrounds/Urban Evasion III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/Jonah Vasquez/With Backgrounds/Overcome III.png" alt="Perk"></div>
-                            </div>
-                            <ol class="build-tips">
-                                <li><strong>Dead Hard</strong> pour gagner de la distance en chase.</li>
-                                <li><strong>Lithe</strong> pour sprinter après un vault rapide.</li>
-                                <li><strong>Urban Evasion</strong> pour se repositionner discrètement.</li>
-                                <li><strong>Overcome</strong> pour fuir rapidement après une touche.</li>
-                            </ol>
-                        </div>
+                <div class="diamond-btn" onclick="openPopup('healer-off')">
+                    <div class="diamond-content">
+                        <h3>Healer Offensif</h3>
+                        <p>Soigner sans se sacrifier</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CATÉGORIE : SOLOQ -->
         <section class="category-section">
-            <div class="category-header">
-                <h2>SoloQ</h2>
-                <span class="builds-count">Builds : 2 <button class="show-btn">SHOW ☰</button></span>
-            </div>
-            <div class="builds-grid">
-                <div class="build-card">
-                    <div class="build-card-inner">
-                        <div class="survivor-portrait">
-                            <img src="assets/portraits/survivant.png" alt="Survivant">
-                        </div>
-                        <div class="build-content">
-                            <h3>Build SoloQ Méta</h3>
-                            <div class="perks-row">
-                                <div class="perk-icon"><img src="assets/Survivors/General Survivor/With Backgrounds//kindred/Kindred III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/Kate Denson/With Backgrounds/Windows of Opportunity III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/Bill Overbeck/With Backgrounds/Borrowed Time III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/Laurie Strode/With Backgrounds/Decisive Strike III.png" alt="Perk"></div>
-                            </div>
-                            <ol class="build-tips">
-                                <li><strong>Kindred</strong> compense le manque de communication en SoloQ.</li>
-                                <li><strong>Windows of Opportunity</strong> pour toujours trouver un loop.</li>
-                                <li><strong>Borrowed Time</strong> protège les décrochages risqués.</li>
-                                <li><strong>Decisive Strike</strong> contre le tunnel agressif.</li>
-                            </ol>
-                        </div>
+            <h2 class="category-title">Looper / Chaser</h2>
+            <div class="diamonds-row">
+                <div class="diamond-btn" onclick="openPopup('loop-compet')">
+                    <div class="diamond-content">
+                        <h3>Loop Compétitif</h3>
+                        <p>Chase & distance maximale</p>
+                    </div>
+                </div>
+                <div class="diamond-btn" onclick="openPopup('loop-vault')">
+                    <div class="diamond-content">
+                        <h3>Vault Speed</h3>
+                        <p>Passages rapides & esquives</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CATÉGORIE : Genrush -->
         <section class="category-section">
-            <div class="category-header">
-                <h2>Genrush</h2>
-                <span class="builds-count">Builds : 2 <button class="show-btn">SHOW ☰</button></span>
+            <h2 class="category-title">SoloQ</h2>
+            <div class="diamonds-row">
+                <div class="diamond-btn" onclick="openPopup('soloq-meta')">
+                    <div class="diamond-content">
+                        <h3>SoloQ Méta</h3>
+                        <p>Info & anti-tunnel</p>
+                    </div>
+                </div>
+                <div class="diamond-btn" onclick="openPopup('soloq-safe')">
+                    <div class="diamond-content">
+                        <h3>SoloQ Safe</h3>
+                        <p>Autonomie maximale</p>
+                    </div>
+                </div>
             </div>
-            <div class="builds-grid">
-                <div class="build-card">
-                    <div class="build-card-inner">
-                        <div class="survivor-portrait">
-                            <img src="assets/portraits/survivant.png" alt="Survivant">
-                        </div>
-                        <div class="build-content">
-                            <h3>Build Genrush Méta</h3>
-                            <div class="perks-row">
-                                <div class="perk-icon"><img src="assets/Survivors/General Survivor/With Backgrounds//Deja Vu/Deja Vu III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/Felix Richter/With Backgrounds/Built to Last III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/Rebecca Chambers/With Backgrounds/Hyperfocus III.png" alt="Perk"></div>
-                                <div class="perk-icon"><img src="assets/Survivors/David Tapp/With Backgrounds/Stake Out III.png" alt="Perk"></div>
-                            </div>
-                            <ol class="build-tips">
-                                <li><strong>Deja Vu</strong> compense le manque de communication en Genrush.</li>
-                                <li><strong>Build to Last</strong> pour recharger sa boite à outil.</li>
-                                <li><strong>Hyperfocus</strong> pour réduire la progression nécéssaire pour faire un gen.</li>
-                                <li><strong>Stake out</strong> pour un progress éclair.</li>
-                            </ol>
-                        </div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">Genrush</h2>
+            <div class="diamonds-row">
+                <div class="diamond-btn" onclick="openPopup('genrush-meta')">
+                    <div class="diamond-content">
+                        <h3>Genrush Méta</h3>
+                        <p>Gens à toute vitesse</p>
+                    </div>
+                </div>
+                <div class="diamond-btn" onclick="openPopup('genrush-toolbox')">
+                    <div class="diamond-content">
+                        <h3>Toolbox Rush</h3>
+                        <p>Boite à outils & efficacité</p>
                     </div>
                 </div>
             </div>
@@ -190,5 +117,16 @@
 
     </main>
 
+    <div class="popup-overlay" id="popupOverlay" onclick="closeOnOverlay(event)">
+        <div class="popup-box" id="popupBox">
+            <button class="popup-close" onclick="closePopup()">✕</button>
+            <h2 id="popupTitle"></h2>
+            <div id="popupContent"></div>
+        </div>
+    </div>
+
+    <script src="assets/js/builds.js"></script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
