@@ -39,6 +39,10 @@ button {
     outline: none;
     font-family: inherit;
 }
+@font-face {
+    font-family: 'Friday13';
+    src: url('../fonts/Friday13.ttf') format('truetype');
+}
 
 /* =========================================
    NAVBAR
@@ -57,14 +61,16 @@ button {
     justify-content: space-between;
     padding: 0 40px;
     position: relative;
+    
 }
 
 
    .nav-logo {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.2px;
+    font-family: 'Friday13', sans-serif;
 }
 
 
@@ -84,13 +90,14 @@ button {
 
 .nav-menu li a {
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 1500;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 8px 18px;
     border-radius: 4px;
     transition: background 0.3s ease;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    font-family: 'Friday13', sans-serif;
 }
 
 .nav-menu li a:hover {
